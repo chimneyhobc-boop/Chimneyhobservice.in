@@ -5,616 +5,684 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chimney Repair & Cleaning Service | Chimney & Hob Care</title>
+<title>Chimney, Hob & Gas Stove Repair in Noida & Ghaziabad | Chimney & Hob Care</title>
 
-<meta name="description" content="Chimney repair, deep cleaning, kitchen hob and gas stove service in Noida, Ghaziabad and Delhi NCR. Contact Chimney & Hob Care for independent doorstep service.">
+<meta name="description" content="Chimney repair, chimney deep cleaning, kitchen hob and gas stove service in all areas of Noida and Ghaziabad. Contact Chimney & Hob Care for independent doorstep service.">
 
-<meta name="robots" content="index,follow">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#101820">
+<link rel="canonical" href="https://eyhobservicein.vercel.app/">
 
 <style>
 :root {
- --dark:#101820;
- --dark2:#192a39;
- --orange:#f5a623;
- --green:#20ad68;
- --text:#19232e;
- --muted:#687582;
+  --dark:#101820;
+  --dark2:#192a39;
+  --orange:#f5a623;
+  --green:#20ad68;
+  --text:#19232e;
+  --muted:#687582;
 }
 
 * {
- margin:0;
- padding:0;
- box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 html {
- scroll-behavior:smooth;
- scroll-padding-top:85px;
+  scroll-behavior:smooth;
+  scroll-padding-top:85px;
 }
 
 body {
- font-family:Arial,Helvetica,sans-serif;
- line-height:1.65;
- color:var(--text);
- background:white;
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.65;
+  color:var(--text);
+  background:#fff;
 }
 
 a {
- text-decoration:none;
- color:inherit;
+  text-decoration:none;
+  color:inherit;
 }
 
 .container {
- width:92%;
- max-width:1120px;
- margin:auto;
+  width:92%;
+  max-width:1120px;
+  margin:auto;
 }
 
+/* HEADER AND LOGO */
+
 header {
- height:76px;
- background:#0c151e;
- color:white;
- display:flex;
- justify-content:center;
- align-items:center;
- position:sticky;
- top:0;
- z-index:100;
+  min-height:75px;
+  background:#0c151e;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+  padding:10px;
 }
 
 .brand {
- font-size:27px;
- font-weight:900;
- text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  font-size:24px;
+  font-weight:900;
+  color:white;
+  line-height:1.2;
 }
 
-.brand span {
- color:var(--orange);
+.brand-name span {
+  color:var(--orange);
 }
+
+.logo {
+  width:42px;
+  height:42px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--orange);
+  border-radius:10px;
+  flex-shrink:0;
+}
+
+.logo svg {
+  width:30px;
+  height:30px;
+}
+
+/* BUTTONS */
 
 .btn {
- display:inline-block;
- padding:14px 22px;
- border:0;
- border-radius:9px;
- font-weight:800;
- font-size:16px;
- cursor:pointer;
- text-align:center;
+  display:inline-block;
+  padding:14px 22px;
+  border:0;
+  border-radius:9px;
+  font-weight:800;
+  font-size:16px;
+  cursor:pointer;
+  text-align:center;
+  margin:5px 5px 5px 0;
 }
 
 .orange {
- background:var(--orange);
- color:#111820;
+  background:var(--orange);
+  color:#101820;
 }
 
 .green {
- background:var(--green);
- color:white;
+  background:var(--green);
+  color:white;
 }
 
-/* HERO WITH BLURRED CHIMNEY PHOTO */
+/* HERO - IMAGE ONLY BEHIND TITLE */
 
 .hero {
- position:relative;
- overflow:hidden;
- background:#101820;
- color:white;
- padding:65px 0 38px;
+  background:#101820;
+  color:white;
+  padding:0 0 40px;
 }
 
-.hero:before {
- content:"";
- position:absolute;
- inset:-10px;
- background:
- linear-gradient(
- 90deg,
- rgba(10,18,27,.94),
- rgba(10,18,27,.75)
- ),
- url("https://images.unsplash.com/photo-1714624107079-9925651c396a?auto=format&fit=crop&w=1800&q=85")
- center/cover no-repeat;
- filter:blur(3px);
- transform:scale(1.03);
+.hero-banner {
+  position:relative;
+  overflow:hidden;
+  padding:65px 0 45px;
+  background:#101820;
+}
+
+.hero-banner::before {
+  content:"";
+  position:absolute;
+  inset:-10px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10,18,27,.88),
+      rgba(10,18,27,.76)
+    ),
+    url("https://images.unsplash.com/photo-1714624107079-9925651c396a?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+  filter:blur(3px);
+  transform:scale(1.04);
 }
 
 .hero-content {
- position:relative;
- z-index:2;
+  position:relative;
+  z-index:2;
 }
 
 .eyebrow {
- color:var(--orange);
- font-size:14px;
- font-weight:900;
- letter-spacing:2px;
- text-transform:uppercase;
+  color:var(--orange);
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
 }
 
 h1 {
- font-size:clamp(36px,6vw,58px);
- line-height:1.12;
- margin:15px 0;
- max-width:800px;
+  font-size:clamp(35px,6vw,58px);
+  line-height:1.12;
+  margin:17px 0;
+  max-width:850px;
 }
 
-.hero p {
- color:#e2e8ee;
- font-size:17px;
- max-width:750px;
- margin-bottom:22px;
+.hero-content p {
+  color:#e2e8ee;
+  font-size:17px;
+  max-width:780px;
+  margin-bottom:20px;
 }
 
-/* BOOKING FORM - NO BACKGROUND IMAGE */
+/* BOOKING FORM - PLAIN WHITE */
 
 .booking-card {
- position:relative;
- z-index:3;
- margin-top:35px;
- background:#ffffff;
- color:var(--text);
- padding:25px;
- border-radius:18px;
- border-top:7px solid var(--orange);
- box-shadow:0 12px 35px #0003;
+  position:relative;
+  z-index:5;
+  margin-top:25px;
+  background:#fff !important;
+  background-image:none !important;
+  color:var(--text);
+  padding:26px;
+  border-radius:18px;
+  border-top:7px solid var(--orange);
+  box-shadow:0 12px 35px #0003;
 }
 
 .booking-card h2 {
- text-align:center;
- font-size:29px;
- margin-bottom:20px;
+  text-align:center;
+  font-size:29px;
+  margin-bottom:20px;
 }
 
 .form-grid {
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:15px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
 }
 
 .field label {
- display:block;
- font-weight:800;
- margin-bottom:6px;
+  display:block;
+  font-weight:800;
+  margin-bottom:7px;
 }
 
 .field input,
 .field select,
 .field textarea {
- width:100%;
- padding:13px;
- border:1px solid #d8dfe5;
- border-radius:9px;
- font-size:15px;
- background:#fff;
- color:#222;
- font-family:inherit;
+  width:100%;
+  padding:14px;
+  border:1px solid #d8dfe5;
+  border-radius:9px;
+  font-size:15px;
+  background:#fff;
+  color:#222;
+  font-family:inherit;
+}
+
+.field textarea {
+  resize:vertical;
+  min-height:90px;
 }
 
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
- outline:2px solid var(--orange);
+  outline:2px solid var(--orange);
 }
 
 .form-submit {
- width:100%;
- margin-top:18px;
- font-size:17px;
+  width:100%;
+  margin-top:20px;
+  font-size:17px;
 }
 
-/* SECTIONS */
+.form-note {
+  color:#687582;
+  text-align:center;
+  font-size:13px;
+  margin-top:12px;
+}
 
-section {
- padding:65px 0;
+/* GENERAL SECTIONS */
+
+section:not(.hero) {
+  padding:65px 0;
 }
 
 .section-head {
- text-align:center;
- margin-bottom:32px;
+  text-align:center;
+  margin-bottom:32px;
 }
 
 .section-head h2 {
- font-size:clamp(27px,4vw,37px);
- line-height:1.2;
- margin-top:7px;
+  font-size:clamp(27px,4vw,37px);
+  line-height:1.2;
+  margin-top:8px;
 }
 
 .section-head p {
- color:var(--muted);
- margin-top:9px;
+  color:var(--muted);
+  margin-top:9px;
 }
 
 /* ABOUT */
 
 .about-grid {
- display:grid;
- grid-template-columns:1fr 1fr;
- gap:35px;
- align-items:center;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
 }
 
 .about-grid img {
- width:100%;
- height:330px;
- object-fit:cover;
- border-radius:15px;
+  width:100%;
+  height:330px;
+  object-fit:cover;
+  border-radius:15px;
 }
 
 .about-grid h2 {
- font-size:32px;
- line-height:1.2;
- margin:10px 0;
+  font-size:32px;
+  line-height:1.2;
+  margin:10px 0;
 }
 
 .about-grid p {
- color:var(--muted);
- margin:12px 0;
+  color:var(--muted);
+  margin:12px 0;
 }
 
 .check-list {
- list-style:none;
- margin:15px 0;
+  list-style:none;
+  margin:15px 0;
 }
 
 .check-list li {
- margin:8px 0;
+  margin:8px 0;
 }
 
-.check-list li:before {
- content:"✓";
- color:#d58b13;
- font-weight:bold;
- margin-right:10px;
+.check-list li::before {
+  content:"✓";
+  color:#d58b13;
+  font-weight:bold;
+  margin-right:10px;
 }
 
 /* SERVICES */
 
 .services {
- background:var(--dark);
- color:white;
+  background:var(--dark);
+  color:white;
 }
 
 .service-grid {
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:22px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
 }
 
 .service-card {
- background:var(--dark2);
- border:1px solid #ffffff1c;
- border-radius:14px;
- overflow:hidden;
+  background:var(--dark2);
+  border:1px solid #ffffff1c;
+  border-radius:14px;
+  overflow:hidden;
 }
 
 .service-card img {
- width:100%;
- height:220px;
- object-fit:cover;
- display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
 }
 
 .service-body {
- padding:22px;
+  padding:22px;
 }
 
 .service-body h3 {
- font-size:22px;
- margin-bottom:8px;
+  font-size:22px;
+  margin-bottom:8px;
 }
 
 .service-body p {
- color:#d0d8df;
- font-size:14px;
+  color:#d0d8df;
+  font-size:14px;
 }
 
 .service-body ul {
- padding-left:20px;
- margin:13px 0;
- color:#d0d8df;
+  padding-left:20px;
+  margin:13px 0;
+  color:#d0d8df;
 }
 
 .service-body li {
- margin:6px 0;
+  margin:6px 0;
 }
 
 .service-body .btn {
- margin-top:10px;
+  margin-top:10px;
 }
 
-/* PRICE LIST */
+/* PRICES */
 
 .pricing {
- background:#15283a;
- color:white;
+  background:#15283a;
+  color:white;
 }
 
 .price-grid {
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
 .price-box {
- background:#ffffff0d;
- border:1px solid #ffffff28;
- padding:25px;
- border-radius:14px;
- text-align:center;
+  background:#ffffff0d;
+  border:1px solid #ffffff28;
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
 }
 
 .price-box h3 {
- font-size:18px;
+  font-size:19px;
 }
 
 .price-amount {
- font-size:36px;
- color:var(--orange);
- font-weight:900;
- margin:8px 0;
+  font-size:36px;
+  color:var(--orange);
+  font-weight:900;
+  margin:8px 0;
 }
 
 .price-box p {
- color:#d0d8df;
- font-size:14px;
+  color:#d0d8df;
+  font-size:14px;
 }
 
 .price-note {
- text-align:center;
- margin:25px auto 0;
- max-width:800px;
- color:#e0e7ed;
+  text-align:center;
+  margin:25px auto 0;
+  max-width:800px;
+  color:#e0e7ed;
 }
 
 .price-note strong {
- color:var(--orange);
+  color:var(--orange);
 }
 
-/* WHY US */
+/* WHY CHOOSE US */
 
 .why-grid {
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
 .why-card {
- background:#f3f6f8;
- padding:24px;
- border-radius:12px;
- text-align:center;
+  background:#f3f6f8;
+  padding:24px;
+  border-radius:12px;
+  text-align:center;
 }
 
 .why-card .emoji {
- font-size:32px;
+  font-size:32px;
 }
 
 .why-card h3 {
- margin:8px 0;
+  margin:8px 0;
 }
 
 .why-card p {
- color:var(--muted);
- font-size:14px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* SERVICE AREAS */
+
+.area-section {
+  background:#f3f6f8;
+}
+
+.area-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.area-card {
+  background:white;
+  padding:25px;
+  border-radius:12px;
+}
+
+.area-card h3 {
+  color:#172737;
+  margin-bottom:10px;
+}
+
+.area-card p {
+  color:var(--muted);
 }
 
 /* CONTACT */
 
 .contact {
- background:#f3f5f7;
+  background:#f3f5f7;
 }
 
 .contact-grid {
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:17px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:17px;
 }
 
 .contact-box {
- background:white;
- padding:22px;
- border-radius:12px;
- overflow-wrap:anywhere;
+  background:white;
+  padding:22px;
+  border-radius:12px;
+  overflow-wrap:anywhere;
 }
 
 .contact-box h3 {
- margin-bottom:8px;
+  margin-bottom:8px;
 }
 
 .contact-box p {
- color:var(--muted);
- font-size:14px;
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:10px;
 }
 
-/* LEGAL PAGES */
+/* PRIVACY AND TERMS */
 
 .legal {
- background:white;
+  background:white;
 }
 
 .legal-content {
- background:#f5f7f9;
- padding:25px;
- border-radius:12px;
+  background:#f5f7f9;
+  padding:25px;
+  border-radius:12px;
 }
 
 .legal-content p {
- color:#52606d;
- margin:10px 0;
+  color:#52606d;
+  margin:10px 0;
 }
 
 /* DISCLAIMER */
 
 .disclaimer {
- background:#fff1d5;
- padding:22px;
- text-align:center;
- border-top:3px solid var(--orange);
+  background:#fff1d5;
+  padding:22px;
+  text-align:center;
+  border-top:3px solid var(--orange);
 }
 
 .disclaimer p {
- max-width:900px;
- margin:7px auto;
- font-size:13px;
- color:#594b34;
+  max-width:900px;
+  margin:7px auto;
+  font-size:13px;
+  color:#594b34;
 }
 
 /* FOOTER */
 
 footer {
- background:#0b131b;
- color:white;
- padding:42px 0 20px;
+  background:#0b131b;
+  color:white;
+  padding:42px 0 20px;
 }
 
 .footer-grid {
- display:grid;
- grid-template-columns:1.2fr 1fr 1.2fr;
- gap:28px;
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1.2fr;
+  gap:28px;
 }
 
 footer h3 {
- color:var(--orange);
- margin-bottom:12px;
+  color:var(--orange);
+  margin-bottom:12px;
 }
 
 footer p,
 footer a {
- color:#c5ced7;
- font-size:14px;
- overflow-wrap:anywhere;
+  color:#c5ced7;
+  font-size:14px;
+  overflow-wrap:anywhere;
 }
 
 footer a {
- display:block;
- margin:8px 0;
+  display:block;
+  margin:8px 0;
 }
 
 footer a:hover {
- color:var(--orange);
+  color:var(--orange);
+}
+
+.footer-brand {
+  margin-bottom:14px;
 }
 
 .footer-bottom {
- border-top:1px solid #ffffff24;
- margin-top:28px;
- padding-top:18px;
- text-align:center;
- color:#abb6c0;
- font-size:13px;
+  border-top:1px solid #ffffff24;
+  margin-top:28px;
+  padding-top:18px;
+  text-align:center;
+  color:#abb6c0;
+  font-size:13px;
 }
 
 .footer-bottom a {
- display:inline-block;
- margin:5px 8px;
+  display:inline-block;
+  margin:5px 8px;
 }
 
-/* ONLY ANIMATED CALL ICON */
+/* FLOATING CALL ICON ONLY */
 
 .floating-call {
- position:fixed;
- right:17px;
- bottom:18px;
- width:62px;
- height:62px;
- display:flex;
- justify-content:center;
- align-items:center;
- background:var(--orange);
- color:#101820;
- border:3px solid white;
- border-radius:50%;
- z-index:200;
- box-shadow:0 5px 18px #0004;
+  position:fixed;
+  right:17px;
+  bottom:18px;
+  width:62px;
+  height:62px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--orange);
+  color:#101820;
+  border:3px solid white;
+  border-radius:50%;
+  z-index:200;
+  box-shadow:0 5px 18px #0004;
 }
 
 .call-icon {
- font-size:30px;
- animation:ring 1.2s infinite ease-in-out;
- display:inline-block;
+  font-size:30px;
+  display:inline-block;
+  animation:ring 1.2s infinite ease-in-out;
 }
 
 @keyframes ring {
- 0%,100% {
-  transform:rotate(0deg) scale(1);
- }
- 20% {
-  transform:rotate(-15deg) scale(1.1);
- }
- 40% {
-  transform:rotate(15deg) scale(1.1);
- }
- 60% {
-  transform:rotate(-10deg);
- }
- 80% {
-  transform:rotate(10deg);
- }
+  0%,100% { transform:rotate(0deg) scale(1); }
+  20% { transform:rotate(-15deg) scale(1.1); }
+  40% { transform:rotate(15deg) scale(1.1); }
+  60% { transform:rotate(-10deg); }
+  80% { transform:rotate(10deg); }
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE */
 
 @media(max-width:760px) {
 
- header {
-  height:68px;
- }
+  header {
+    min-height:68px;
+  }
 
- .brand {
-  font-size:23px;
- }
+  .brand {
+    font-size:21px;
+  }
 
- .hero {
-  padding-top:48px;
- }
+  .logo {
+    width:36px;
+    height:36px;
+  }
 
- .hero p {
-  font-size:15px;
- }
+  .hero-banner {
+    padding:48px 0 38px;
+  }
 
- .form-grid {
-  grid-template-columns:1fr;
- }
+  .hero-content p {
+    font-size:15px;
+  }
 
- .about-grid {
-  grid-template-columns:1fr;
- }
+  .booking-card {
+    padding:20px 15px;
+  }
 
- .about-grid img {
-  height:250px;
- }
+  .booking-card h2 {
+    font-size:25px;
+  }
 
- .service-grid {
-  grid-template-columns:1fr;
- }
+  .form-grid {
+    grid-template-columns:1fr;
+  }
 
- .price-grid {
-  grid-template-columns:1fr;
- }
+  .about-grid {
+    grid-template-columns:1fr;
+  }
 
- .why-grid {
-  grid-template-columns:1fr;
- }
+  .about-grid img {
+    height:250px;
+  }
 
- .contact-grid {
-  grid-template-columns:1fr;
- }
+  .service-grid,
+  .price-grid,
+  .why-grid,
+  .contact-grid,
+  .footer-grid,
+  .area-grid {
+    grid-template-columns:1fr;
+  }
 
- .footer-grid {
-  grid-template-columns:1fr;
- }
+  .service-card img {
+    height:220px;
+  }
 
- .booking-card {
-  padding:20px 15px;
- }
-
- .booking-card h2 {
-  font-size:25px;
- }
-
+  h1 {
+    font-size:38px;
+  }
 }
-
 </style>
 </head>
 
@@ -623,16 +691,39 @@ footer a:hover {
 <!-- HEADER -->
 
 <header>
- <a class="brand" href="#home">
-  CHIMNEY <span>&amp; HOB CARE</span>
- </a>
+
+<a class="brand" href="#home" aria-label="Chimney and Hob Care Home">
+
+  <span class="logo">
+    <svg viewBox="0 0 64 64" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 29L32 9L55 29V54H9V29Z"
+      stroke="#101820" stroke-width="5"
+      stroke-linejoin="round"/>
+      <path d="M23 54V36H41V54"
+      stroke="#101820" stroke-width="5"/>
+      <path d="M19 25H45"
+      stroke="#101820" stroke-width="4"/>
+      <path d="M42 10V3H51V17"
+      stroke="#101820" stroke-width="4"/>
+    </svg>
+  </span>
+
+  <span class="brand-name">
+    CHIMNEY <span>&amp; HOB CARE</span>
+  </span>
+
+</a>
+
 </header>
 
 <main>
 
-<!-- HOME -->
+<!-- HERO IMAGE ONLY BEHIND TITLE -->
 
 <section class="hero" id="home">
+
+<div class="hero-banner">
 
 <div class="container hero-content">
 
@@ -641,14 +732,15 @@ Independent Kitchen Appliance Service
 </div>
 
 <h1>
-Chimney Repair &amp; Cleaning Service
+Chimney, Hob &amp; Gas Stove
+Repair &amp; Cleaning Service
 </h1>
 
 <p>
 Professional chimney repair, deep cleaning,
-kitchen hob and gas stove maintenance assistance
-at your doorstep. Serving Noida, Ghaziabad
-and Delhi NCR.
+kitchen hob repair and gas stove maintenance
+assistance at your doorstep. Serving all areas
+of Noida and Ghaziabad.
 </p>
 
 <a href="#booking" class="btn orange">
@@ -656,11 +748,17 @@ Book a Service
 </a>
 
 <a href="https://wa.me/918745874458"
-class="btn green" target="_blank" rel="noopener">
+class="btn green" target="_blank"
+rel="noopener">
 WhatsApp Us
 </a>
 
-<!-- BOOKING FORM -->
+</div>
+</div>
+
+<!-- BOOKING FORM OUTSIDE HERO IMAGE -->
+
+<div class="container">
 
 <div class="booking-card" id="booking">
 
@@ -672,23 +770,22 @@ WhatsApp Us
 
 <div class="field">
 <label for="name">Your Name *</label>
-<input id="name" required
+<input id="name" name="name"
+type="text" required
 placeholder="Enter your name">
 </div>
 
 <div class="field">
 <label for="phone">Mobile Number *</label>
-<input id="phone" type="tel"
-inputmode="numeric"
-pattern="[0-9]{10}"
-maxlength="10"
-required
-placeholder="10-digit mobile number">
+<input id="phone" name="phone"
+type="tel" inputmode="numeric"
+pattern="[0-9]{10}" maxlength="10"
+required placeholder="10-digit mobile number">
 </div>
 
 <div class="field">
 <label for="service">Select Service *</label>
-<select id="service" required>
+<select id="service" name="service" required>
 <option value="">Choose service</option>
 <option>Chimney Visit / Inspection</option>
 <option>Chimney Deep Cleaning</option>
@@ -702,31 +799,31 @@ placeholder="10-digit mobile number">
 
 <div class="field">
 <label for="address">Your Address *</label>
-<input id="address" required
+<input id="address" name="address"
+type="text" required
 placeholder="House number, area, city">
 </div>
 
 <div class="field">
 <label for="date">Preferred Date</label>
-<input id="date" type="date">
+<input id="date" name="date" type="date">
 </div>
 
 <div class="field">
 <label for="problem">Problem Details</label>
-<input id="problem"
-placeholder="Describe the issue">
+<textarea id="problem" name="problem"
+placeholder="Describe the issue"></textarea>
 </div>
 
 </div>
 
-<button class="btn orange form-submit" type="submit">
+<button type="submit" class="btn orange form-submit">
 Send Booking on WhatsApp
 </button>
 
 </form>
 
 </div>
-
 </div>
 </section>
 
@@ -737,8 +834,8 @@ Send Booking on WhatsApp
 <div class="container about-grid">
 
 <img
-src="https://images.unsplash.com/photo-1714624107079-9925651c396a?auto=format&fit=crop&w=1000&q=85"
-alt="Kitchen chimney and range hood"
+src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+alt="Modern home kitchen interior"
 loading="lazy">
 
 <div>
@@ -754,9 +851,10 @@ built-in hobs and domestic gas stoves.
 </p>
 
 <p>
-We assist with common appliance problems,
-cleaning requirements, inspection and
-installation-related service requests.
+We assist customers with common appliance
+problems, cleaning requirements, inspection
+and installation-related service requests
+in Noida and Ghaziabad.
 </p>
 
 <ul class="check-list">
@@ -782,11 +880,15 @@ Book a Service
 <div class="container">
 
 <div class="section-head">
+
 <div class="eyebrow">Our Services</div>
+
 <h2>Repair, Cleaning &amp; Maintenance</h2>
+
 <p style="color:#d0d8df">
 Independent service assistance for your kitchen appliances.
 </p>
+
 </div>
 
 <div class="service-grid">
@@ -831,7 +933,7 @@ Book Chimney Service
 
 <img
 src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=85"
-alt="Modern kitchen hob and cooking counter"
+alt="Kitchen hob and cooking area"
 loading="lazy">
 
 <div class="service-body">
@@ -863,8 +965,8 @@ Book Hob Service
 <article class="service-card">
 
 <img
-src="https://images.unsplash.com/photo-1767771665869-51fab4d8c83b?auto=format&fit=crop&w=900&q=85"
-alt="Gas stove burner with blue flame"
+src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=85"
+alt="Domestic kitchen gas stove and cooking counter"
 loading="lazy">
 
 <div class="service-body">
@@ -902,11 +1004,15 @@ Book Gas Stove Service
 <div class="container">
 
 <div class="section-head">
+
 <div class="eyebrow">Transparent Charges</div>
+
 <h2>Our Service Price List</h2>
+
 <p style="color:#d0d8df">
 Charges for selected chimney services.
 </p>
+
 </div>
 
 <div class="price-grid">
@@ -952,9 +1058,9 @@ will be charged separately after discussion.
 </div>
 </section>
 
-<!-- WHY US -->
+<!-- WHY CHOOSE US -->
 
-<section>
+<section id="why-us">
 
 <div class="container">
 
@@ -990,6 +1096,46 @@ Charges discussed before additional work.
 </div>
 
 </div>
+</div>
+</section>
+
+<!-- SERVICE AREAS -->
+
+<section class="area-section" id="areas">
+
+<div class="container">
+
+<div class="section-head">
+<div class="eyebrow">Our Service Locations</div>
+<h2>Serving Noida &amp; Ghaziabad</h2>
+<p>
+Independent kitchen appliance service assistance
+across Noida and Ghaziabad.
+</p>
+</div>
+
+<div class="area-grid">
+
+<div class="area-card">
+<h3>Service Areas in Noida</h3>
+<p>
+Sector 1 to Sector 168, including residential
+societies, apartments and nearby localities
+across Noida.
+</p>
+</div>
+
+<div class="area-card">
+<h3>Service Areas in Ghaziabad</h3>
+<p>
+Indirapuram, Vaishali, Vasundhara,
+Raj Nagar, Raj Nagar Extension,
+Crossings Republik and nearby areas.
+</p>
+</div>
+
+</div>
+
 </div>
 </section>
 
@@ -1075,7 +1221,7 @@ service assistance.
 The booking form opens WhatsApp with your
 booking details. You must press Send in
 WhatsApp to share the message with us.
-WhatsApp's privacy policy also applies.
+WhatsApp's own privacy policy also applies.
 </p>
 
 <p>
@@ -1088,7 +1234,7 @@ chimneyhobc@gmail.com.
 </div>
 </section>
 
-<!-- TERMS -->
+<!-- TERMS AND CONDITIONS -->
 
 <section class="legal" id="terms">
 
@@ -1175,7 +1321,7 @@ All services are independently provided.
 
 </main>
 
-<!-- DISCLAIMER ABOVE FOOTER -->
+<!-- INDEPENDENT DISCLAIMER ABOVE FOOTER -->
 
 <div class="disclaimer">
 
@@ -1199,14 +1345,35 @@ manufacturer service centre.
 
 <div>
 
-<div class="brand">
+<div class="footer-brand">
+
+<a class="brand" href="#home">
+
+<span class="logo">
+<svg viewBox="0 0 64 64" fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M9 29L32 9L55 29V54H9V29Z"
+stroke="#101820" stroke-width="5"
+stroke-linejoin="round"/>
+<path d="M23 54V36H41V54"
+stroke="#101820" stroke-width="5"/>
+<path d="M42 10V3H51V17"
+stroke="#101820" stroke-width="4"/>
+</svg>
+</span>
+
+<span class="brand-name">
 CHIMNEY <span>&amp; HOB CARE</span>
+</span>
+
+</a>
+
 </div>
 
-<p style="margin-top:12px">
+<p>
 Independent chimney, hob and gas stove
 repair and cleaning service assistance
-in Noida, Ghaziabad and Delhi NCR.
+in Noida and Ghaziabad.
 </p>
 
 </div>
@@ -1220,6 +1387,7 @@ in Noida, Ghaziabad and Delhi NCR.
 <a href="#services">Our Services</a>
 <a href="#pricing">Price List</a>
 <a href="#booking">Book a Service</a>
+<a href="#areas">Service Areas</a>
 <a href="#contact">Contact Us</a>
 
 </div>
@@ -1266,7 +1434,7 @@ Chimney &amp; Hob Care. All Rights Reserved.
 </div>
 </footer>
 
-<!-- ANIMATED PHONE ICON ONLY -->
+<!-- FLOATING CALL BUTTON - ICON ONLY -->
 
 <a href="tel:+918745874458"
 class="floating-call"
@@ -1276,56 +1444,59 @@ aria-label="Call Chimney and Hob Care">
 
 </a>
 
-<!-- BOOKING SCRIPT -->
+<!-- WHATSAPP BOOKING SCRIPT -->
 
 <script>
 
 document.getElementById("year").textContent =
 new Date().getFullYear();
 
-document.getElementById("bookingForm")
-.addEventListener("submit", function(e) {
+const bookingForm =
+document.getElementById("bookingForm");
 
-e.preventDefault();
+bookingForm.addEventListener("submit", function(e) {
 
-const name =
-document.getElementById("name").value.trim();
+  e.preventDefault();
 
-const phone =
-document.getElementById("phone").value.trim();
+  const name =
+  document.getElementById("name").value.trim();
 
-const service =
-document.getElementById("service").value;
+  const phone =
+  document.getElementById("phone").value.trim();
 
-const address =
-document.getElementById("address").value.trim();
+  const service =
+  document.getElementById("service").value;
 
-const date =
-document.getElementById("date").value || "Not specified";
+  const address =
+  document.getElementById("address").value.trim();
 
-const problem =
-document.getElementById("problem").value.trim()
-|| "Not specified";
+  const date =
+  document.getElementById("date").value
+  || "Not specified";
 
-if (!/^[0-9]{10}$/.test(phone)) {
- alert("Please enter a valid 10-digit mobile number.");
- return;
-}
+  const problem =
+  document.getElementById("problem").value.trim()
+  || "Not specified";
 
-const message =
-"NEW SERVICE BOOKING - CHIMNEY & HOB CARE\n\n" +
-"Name: " + name + "\n" +
-"Mobile: " + phone + "\n" +
-"Service: " + service + "\n" +
-"Address: " + address + "\n" +
-"Preferred Date: " + date + "\n" +
-"Problem: " + problem;
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    return;
+  }
 
-const url =
-"https://wa.me/918745874458?text=" +
-encodeURIComponent(message);
+  const message =
+  "NEW SERVICE BOOKING - CHIMNEY & HOB CARE\n\n" +
+  "Name: " + name + "\n" +
+  "Mobile: " + phone + "\n" +
+  "Service: " + service + "\n" +
+  "Address: " + address + "\n" +
+  "Preferred Date: " + date + "\n" +
+  "Problem: " + problem;
 
-window.open(url, "_blank");
+  const url =
+  "https://wa.me/918745874458?text=" +
+  encodeURIComponent(message);
+
+  window.location.href = url;
 
 });
 
