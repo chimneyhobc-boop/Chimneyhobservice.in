@@ -26,6 +26,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:85px}
 body{font-family:Arial,Helvetica,sans-serif;color:#202b38;line-height:1.7;background:#fff}
+
 :root{
 --dark:#101820;
 --dark2:#192b3b;
@@ -34,6 +35,7 @@ body{font-family:Arial,Helvetica,sans-serif;color:#202b38;line-height:1.7;backgr
 --light:#f4f6f8;
 --text:#526171;
 }
+
 .container{width:92%;max-width:1150px;margin:auto}
 a{text-decoration:none}
 img{max-width:100%}
@@ -77,6 +79,7 @@ filter:blur(3px);transform:scale(1.04)
 .eyebrow{color:var(--orange);font-weight:900;font-size:13px;letter-spacing:2px;text-transform:uppercase}
 .hero h1{font-size:clamp(36px,6vw,59px);line-height:1.13;margin:17px 0}
 .hero-content p{font-size:17px;color:#e1e8ee;max-width:750px;margin-bottom:20px}
+
 .btn{
 display:inline-block;padding:13px 20px;
 border-radius:8px;font-weight:800;
@@ -85,6 +88,51 @@ font-size:14px;border:none;cursor:pointer;margin:5px 5px 5px 0
 .orange{background:var(--orange);color:#101820}
 .green{background:var(--green);color:white}
 .outline{border:1px solid white;color:white}
+
+/* AUTOMATIC CHIMNEY BRAND SLIDER */
+.brand-marquee{
+width:100%;
+overflow:hidden;
+margin:22px 0 25px;
+padding:13px 0;
+background:rgba(255,255,255,0.08);
+border-top:1px solid rgba(255,255,255,0.15);
+border-bottom:1px solid rgba(255,255,255,0.15);
+}
+
+.brand-track{
+display:flex;
+width:max-content;
+animation:brand-scroll 35s linear infinite;
+}
+
+.brand-group{
+display:flex;
+align-items:center;
+gap:18px;
+padding-right:18px;
+flex-shrink:0;
+}
+
+.brand-item{
+white-space:nowrap;
+background:#ffffff;
+color:#172431;
+padding:9px 19px;
+border-radius:7px;
+font-size:16px;
+font-weight:900;
+box-shadow:0 3px 10px #0002;
+}
+
+@keyframes brand-scroll{
+from{transform:translateX(0)}
+to{transform:translateX(-50%)}
+}
+
+@media(prefers-reduced-motion:reduce){
+.brand-track{animation:none}
+}
 
 /* BOOKING */
 .booking-card{
@@ -234,6 +282,7 @@ border-radius:50%;z-index:2000;box-shadow:0 5px 18px #0005
 .form-grid{grid-template-columns:1fr 1fr}
 .steps{grid-template-columns:1fr 1fr}
 }
+
 @media(max-width:600px){
 .header-inner{min-height:67px}
 .brand{font-size:17px}
@@ -283,6 +332,61 @@ section:not(.hero){padding:48px 0}
 <div class="eyebrow">Independent Kitchen Appliance Service</div>
 
 <h1>Chimney, Hob &amp; Gas Stove Repair, Cleaning &amp; Maintenance</h1>
+
+<!-- AUTOMATIC BRAND SLIDER -->
+<div class="brand-marquee" aria-label="Kitchen appliance brands">
+<div class="brand-track">
+
+<div class="brand-group">
+<span class="brand-item">FABER</span>
+<span class="brand-item">GLEN</span>
+<span class="brand-item">BOSCH</span>
+<span class="brand-item">SIEMENS</span>
+<span class="brand-item">ELICA</span>
+<span class="brand-item">KAFF</span>
+<span class="brand-item">HINDWARE</span>
+<span class="brand-item">PRESTIGE</span>
+<span class="brand-item">SUNFLAME</span>
+<span class="brand-item">CROMPTON</span>
+<span class="brand-item">WHIRLPOOL</span>
+<span class="brand-item">HAFELE</span>
+<span class="brand-item">KUTCHINA</span>
+<span class="brand-item">INALSA</span>
+<span class="brand-item">PIGEON</span>
+<span class="brand-item">LIFELONG</span>
+<span class="brand-item">EURODOMO</span>
+<span class="brand-item">MIELE</span>
+<span class="brand-item">IFB</span>
+<span class="brand-item">CARYSIL</span>
+<span class="brand-item">BLOWHOT</span>
+</div>
+
+<div class="brand-group" aria-hidden="true">
+<span class="brand-item">FABER</span>
+<span class="brand-item">GLEN</span>
+<span class="brand-item">BOSCH</span>
+<span class="brand-item">SIEMENS</span>
+<span class="brand-item">ELICA</span>
+<span class="brand-item">KAFF</span>
+<span class="brand-item">HINDWARE</span>
+<span class="brand-item">PRESTIGE</span>
+<span class="brand-item">SUNFLAME</span>
+<span class="brand-item">CROMPTON</span>
+<span class="brand-item">WHIRLPOOL</span>
+<span class="brand-item">HAFELE</span>
+<span class="brand-item">KUTCHINA</span>
+<span class="brand-item">INALSA</span>
+<span class="brand-item">PIGEON</span>
+<span class="brand-item">LIFELONG</span>
+<span class="brand-item">EURODOMO</span>
+<span class="brand-item">MIELE</span>
+<span class="brand-item">IFB</span>
+<span class="brand-item">CARYSIL</span>
+<span class="brand-item">BLOWHOT</span>
+</div>
+
+</div>
+</div>
 
 <p>
 Looking for kitchen chimney repair, deep cleaning,
